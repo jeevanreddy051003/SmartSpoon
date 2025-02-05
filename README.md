@@ -10,17 +10,16 @@ Before installing dependencies, create a virtual environment:
 
 
 python -m venv venv
-Activate the virtual environment:
 
+Activate the virtual environment:
 Windows:
 venv\Scripts\activate
 
 Mac/Linux:
-source venv/bin/activate
+venv/bin/activate
 
 ### 2. Install Required Libraries
 Run the following command to install all necessary dependencies:
-pip install -r requirements.txt
 
 ### 3. Navigate to the App Directory
 Move into the application directory:
