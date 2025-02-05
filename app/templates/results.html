@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSpoon</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <div class="container mx-auto p-4">
+        <header class="mb-6 text-center">
+            <h1 class="text-4xl font-bold mb-4">Instructions</h1>
+        </header>
+        <main id="resultsContent" class="bg-black p-6 rounded-lg shadow-lg">
+            <p class="text-red-500 font-semibold text-center">Loading results...</p>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const resultsContent = document.getElementById('resultsContent');
+            
+            
+            const recipes = JSON.parse(localStorage.getItem('recipes'));
+            const instructions = localStorage.getItem('instructions');
+
+
+            localStorage.removeItem('recipes');
+            localStorage.removeItem('instructions');
+
+            if (recipes && recipes.length > 0) {
+                resultsContent.innerHTML = `
+                    <h2 class="text-lg font-semibold mb-4 text-green-400">Suggested Recipes:</h2>
+                    <ul class="list-none p-0">
+                        ${recipes.map(recipe => `
+                            <li class="mb-4">
+                                <span class="text-white font-medium">${recipe}</span>
+                            </li>`).join('')}
+                    </ul>
+                    <div class="mt-6 text-center">
+                        <a href="/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                            Go Back to Home
+                        </a>
+                    </div>
+                `;
+            } else if (instructions) {
+                resultsContent.innerHTML = `
+                    <h2 class="text-lg font-semibold mb-4 text-blue-400">Cooking Instructions:</h2>
+                    <div class="text-white">
+                        <p class="whitespace-pre-line">${instructions}</p>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <a href="/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                            Go Back to Home
+                        </a>
+                    </div>
+                `;
+            } else {
+                resultsContent.innerHTML = `
+                    <p class="text-red-500 font-semibold text-center">No results found. Please try again.</p>
+                    <div class="mt-6 text-center">
+                        <a href="/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                            Go Back to Home
+                        </a>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

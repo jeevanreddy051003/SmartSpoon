@@ -1,0 +1,59 @@
+[
+    {
+        "title": "Onion and Egg Fried Rice",
+        "servings": "2-3",
+        "ingredients": [
+            "1 onion, diced",
+            "2 cups cooked rice (preferably day-old rice)",
+            "2 eggs, beaten",
+            "Salt to taste"
+        ],
+        "instructions": [
+            "Heat a non-stick pan or wok over medium-high heat.",
+            "Add the diced onion and stir-fry until it's translucent and starting to caramelize (about 3-4 minutes).",
+            "Push the onions to one side of the pan.",
+            "Add a little more oil if needed, then pour the beaten eggs into the empty side of the pan. Scramble the eggs until they're cooked through, breaking them up into small pieces as they cook.",
+            "Mix the eggs with the onions.",
+            "Add the cooked rice to the pan, breaking up any clumps with a spatula. Stir-fry the rice with the onions and eggs for about 2-3 minutes, until everything is well combined and the rice is heated through.",
+            "Season with salt to taste.",
+            "Serve hot!"
+        ]
+    },
+    {
+        "title": "Onion and Rice Frittata",
+        "servings": "2-3",
+        "ingredients": [
+            "1 onion, diced",
+            "2 eggs",
+            "1 cup cooked rice",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat the oven to 375°F (190°C).",
+            "In a mixing bowl, beat the eggs and season with salt and pepper.",
+            "Add the diced onion and cooked rice to the bowl and mix well.",
+            "Pour the egg mixture into a greased 6-inch pie dish or small non-stick skillet.",
+            "Bake the frittata for 25-30 minutes, or until the eggs are set and the edges are lightly browned.",
+            "Remove from the oven and let it cool for a few minutes before slicing and serving."
+        ]
+    },
+    {
+        "title": "Onion and Egg Rice Bowl",
+        "servings": "1",
+        "ingredients": [
+            "1 onion, thinly sliced",
+            "1 egg",
+            "1/2 cup cooked rice",
+            "Salt to taste"
+        ],
+        "instructions": [
+            "Heat a non-stick pan over medium heat.",
+            "Add the sliced onion and cook until it's caramelized and golden brown, stirring occasionally (about 15-20 minutes).",
+            "Crack the egg into a small bowl and whisk it lightly.",
+            "Pour the egg mixture over the cooked onion in the pan. Scramble the egg until it's cooked through.",
+            "Serve the egg and onion mixture over a bed of cooked rice.",
+            "Add salt to taste.",
+            "Enjoy your simple yet satisfying rice bowl!"
+        ]
+    }
+]
