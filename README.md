@@ -28,5 +28,5 @@ cd app
 ### 4. Run the Application
 Start the application with:
 python app.py
-Your app should now be running! 🚀
-This provides clear step-by-step instructions while keeping it concise. Let me know if you need an
+Your app should now be running!
+🚀 This provides clear step-by-step instructions while keeping it concise.
